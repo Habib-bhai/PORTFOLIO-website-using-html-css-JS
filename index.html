@@ -4,33 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PORTFOLIO - Bro Habib</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     
     <!-- NAVBAR -->
     <nav class="navbar"> 
-        <div class="home"> <button>HOME</button></div>  <!-- We can also create a UL for navBar  -->
-        <div class="aboutMe"> <button>ABOUT </button></div>
-        <div class="hobbys"> <button>HOBBIES </button></div>
+        <div class="home">    <a href="/" > <button>HOME</button></a>    </div>  <!-- We can also create a UL for navBar  -->
+        <div class="aboutMe"> <a href="#about" ><button>ABOUT </button></a>   </div>
+        <div class="hobbys"> <a href="#" ><button>HOBBIES </button></a>  </div>
         <div class="logo" >
             <img src="./Asset/hero_section/logo.png" alt="logo" >
             <p class="logoParagraph">BRO-H</p> 
         </div>
-        <div class="contact"><button>CONTACT</button></div>
-        <div class="projects"><button>PROJECTS</button></div>
-        <div class="resume"><button>RESUME</button></div>
+        <div class="contact"><a href="#"><button>CONTACT</button></a>   </div>
+        <div class="projects"><a href="#project" ><button>PROJECTS</button></a> </div>
+        <div class="resume"><a href="/Asset/CV.pdf"  download ><button>RESUME</button></a>     </div>
     </nav>
-<div class="app">
+        
+        <!-- HERO SECTION STARTS FROM HERE -->
+         <div class="main">
 
-    <!-- HERO SECTION STARTS FROM HERE -->
-    <div class="name-intro">
-        <img src="./Asset/hero_section/Vector_1.png" alt="vector1">
-        <span class="hello">HELLO!</span>
-    </div>
+             <div class="name-intro">
+                 <img src="./Asset/hero_section/Vector_1.png" alt="vector1">
+                 <span class="hello">HELLO!</span>
+        </div>
     <div class="intro">
         <h1>I'm</h1>
         <h1 class="habib">HABIB</h1>
@@ -53,20 +54,109 @@
             <button class="hireMe" style=" color: white; font-weight: 600;">Hire Me</button>
         </div>
     </div>
-    <div class="senior">
+    <span class="senior">
         
-        <div class="seniorSTD1">
+        <span class="seniorSTD1">
             <img src="./Asset/hero_section/stars.png" alt="">
             <h2>SENIOR STUDENT</h2>
-        </div>
-        <div class="seniorSTD2">
+        </span>
+        <span class="seniorSTD2">
             <img src="./Asset/hero_section/stars.png" alt="">
             <h2>SENIOR STUDENT</h2>
-        </div>
+        </span>
         
-    </div>
+    </span>
     
 </div>
-    <script src="index.js"></script>
+<!-- Project Section -->
+<div class="cardParent">
+    <div id="project">
+        <div class="heading">
+            <h1>lets have a look at my</h1>
+            <h1 class="portfoloioText"> PORTFOLIO</h1>
+        </div>
+    </div>
+   
+
+        <div class="projectsCards card1"> 
+            <div class="cardContent">
+                <h2 class="cardTitle">PASSWORD-GEN IN REACTJS</h2>
+                <a href="https://password-generator-brohabib.netlify.app/" target="_blank"><button class="cardBTN">Here it is</button></a>
+                <p class="cardPara">CHECK IT OUT </p>
+            </div>
+        </div>
+        <div class="projectsCards card2">
+            <div class="cardContent">
+                <h2 class="cardTitle">$$$-CONVERTER IN REACT</h2>
+                <a href="https://currency-converter-brohabib.netlify.app/" target="_blank"><button class="cardBTN">Here it is</button></a>
+                <p class="cardPara">CHECK IT OUT </p>
+            </div>
+        </div>
+        <div class="projectsCards card3">
+            <div class="cardContent">
+                <h2 class="cardTitle">WORD COUNTER + TYPING TEST</h2>
+                <a href="https://github.com/Habib-bhai/wordCounterWithTypingSpeedTest.git" target="_blank"><button class="cardBTN">Here it is</button></a>
+                <p class="cardPara">CHECK IT OUT - OR USE  <br><span class="npx">npx habib-wordcounter-with-typing-speed</span></p>
+            </div>
+        </div>
+
+        <div class="projectsCards card4">
+            <div class="cardContent">
+                <h2 class="cardTitle">WEATHER APP IN HTML,CSS,JS</h2>
+                <a href="https://github.com/Habib-bhai/wordCounterWithTypingSpeedTest.git" target="_blank"><button class="cardBTN">Here it is</button></a>
+                <p class="cardPara">CHECK IT OUT </p>
+            </div>
+        </div>
+        <div class="projectsCards card5">
+            
+            <div class="cardContent">
+                <h2 class="cardTitle">TO-DO LIST APP- CLI BASED</h2>
+                <a href="https://github.com/Habib-bhai/todo-list.git" target="_blank"><button class="cardBTN">Here it is</button></a>
+                <p class="cardPara">CHECK IT OUT - OR USE  <br><span class="npx">npx habib-bro-todo_list</span></p>
+            </div>
+        </div>
+        <div class="projectsCards card6">
+            <div class="cardContent">
+                <h2 class="cardTitle">ATM - CLI BASED</h2>
+                <a href="https://github.com/Habib-bhai/ATM-assignment.git" target="_blank"><button class="cardBTN">Here it is</button></a>
+                <p class="cardPara">CHECK IT OUT - OR USE  <br><span class="npx">npx habib-bro-atm-project</span></p>
+            </div>
+        </div>
+        <div class="projectsCards card7">
+            <div class="cardContent">
+                <h2 class="cardTitle">ATM - CLI BASED</h2>
+                <a href="https://github.com/Habib-bhai/cli-number-guessing.git" target="_blank"><button class="cardBTN">Here it is</button></a>
+                <p class="cardPara">CHECK IT OUT - OR USE  <br><span class="npx">npx @habib-ullah/cli-number-guessing</span></p>
+            </div>
+        </div>
+
+        </div>
+    </div>     
+        
+    <div class="aboutMeSection " id="about">
+        <h1 class="aboutMeHeading">ABOUT ME</h1>
+        <div class="aboutIMG">
+            <div class="img"></div>
+        </div>
+        <p>Hello Everyone! I'm HABIB ULLAH. A boy of 18 Who has Fallen in "LOVE" with Technology. My Learning to code journey started back in the 2nd year of College, when me and my Buddies won a Science exhibitions 1st prize for our college. In those projects I got the opportunity to code the "Arduino" circuits using C language. That victory ignited my ZEAL, so, I got into the wonderland of Web-Development. Exploring different roadmaps, I started learning JavaScript and Chose "MERN" Stack.So, the journey is been on its peak, exploring and conquering projects and ERRORS, and Am on my way to Become a Profficient FULL-STACK-DEVELOPER.</p>
+    
+    </div>
+
+
+    
+    
+    <div class="contactForm">
+        <h1 class="contactHeading">CONTACT FORM</h1>
+       
+            <input type="text" name="name" placeholder="NAME" autocomplete="off" class="input">
+            <input type="email" name="email" placeholder="YOUR EMAIL ADDRESS" autocomplete="off" class="input">
+            <textarea name="textArea" id="textArea" placeholder="HOW CAN I HELP YOUR" autocomplete="off" cols="80" rows="10" name="message"></textarea>
+            <button type="submit" class="submit">SUBMIT</button>
+       
+    </div>
+    
+
+<script src="JS/app.js" ></script>
+
 </body>
 </html>
