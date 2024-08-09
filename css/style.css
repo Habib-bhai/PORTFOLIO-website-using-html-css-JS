@@ -10,6 +10,7 @@
     box-sizing: border-box;
 }
 
+
     /* CSS for Navbar */
 button {
     outline: none;
@@ -655,13 +656,14 @@ transition: transform 0.5s ease-in-out;
     
 }
 
-.contactForm {
+/* .contactForm {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: white;
     text-align: center;
     width: 100%;
+    margin-top: 80%;
     background-color: black
   
 }
@@ -715,8 +717,248 @@ textarea {
     width: 7rem;
     background-color: #00C4F0;
     border-radius: 1.5rem;
-    /* box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0); */
+ 
 }
 .submit:hover {
     box-shadow: 0 0 15px 5px rgba(0, 212, 240, 0.6);
+}
+ */
+
+
+ .parentBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 150vh;
+    background-color: #23242a;
+    box-sizing: border-box;
+ }
+
+ .box {
+    position: relative;
+    width: 380px;
+    height: 700px;
+    background-color: #1c1c1c;
+    overflow: hidden;
+ }
+
+ .box::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 700px;
+    background: linear-gradient(0deg, transparent, transparent, #45f3ff,#45f3ff,#45f3ff);
+    transform-origin: bottom right;
+    z-index: 1;
+    animation: animate 6s linear infinite;
+ }
+
+ .box::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 700px;
+    background: linear-gradient(0deg, transparent, transparent, #45f3ff,#45f3ff,#45f3ff);
+    transform-origin: bottom right;
+    z-index: 1;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+ }
+
+ .borderLine {
+    position: absolute;
+    top: 0;
+    inset: 0;
+ }
+ .borderLine::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 700px;
+    background: linear-gradient(0deg, transparent, transparent, #230de6,#230de6,#230de6);
+    transform-origin: bottom right;
+    z-index: 1;
+    animation: animate 6s linear infinite;
+    animation-delay: -1.5s;
+ }
+ .borderLine::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 700px;
+    background: linear-gradient(0deg, transparent, transparent, #230de6,#230de6,#230de6);
+    transform-origin: bottom right;
+    z-index: 1;
+    animation: animate 6s linear infinite;
+    animation-delay: -4.5s;
+ }
+
+ @keyframes animate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+ }
+
+ .box form {
+    position: absolute;
+    inset: 4px;
+    padding: 50px 20px;
+    border-radius: 8px;
+    background-color: #222;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+ }
+
+
+ .box form h2 {
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+ }
+
+ .box form .inputBox {
+    position: relative;
+    width: 300px;
+    margin-top: 35px;
+ }
+ .box form .inputBox input {
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    color: #23242a;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+ }
+
+
+ .box form .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 20px 0px 10px;
+    color: #8f8f8f;
+    font-weight: 600;
+    pointer-events: none;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+ }
+
+ 
+ .box form .inputBox input:valid ~ span, 
+ .box form .inputBox input:focus ~ span  {
+    color: white;
+    font-size: 0.75em;
+    transform: translateY(-35px);
+ }
+ .inputBox i {
+     display:block;
+     position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    pointer-events: none;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.box form .inputBox input:valid ~ i, 
+ .box form .inputBox input:focus ~ i {
+    height: 50px;
+    transform: translateY(-35px);
+ }
+
+
+
+ .box form .textArea {
+    position: relative;
+    width: 300px;
+    margin-top: 35px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .box form textarea {
+    position: relative;
+    width: 100%;
+    left: 1rem;
+    padding: 20px 10px 10px;
+    background: transparent;
+    border: none;
+    border-radius: 1rem;
+    outline: none;
+    box-shadow: none;
+    color: #23242a;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+ }
+ .box form .textArea span {
+    position: absolute;
+    left: 0;
+    padding: 300px 10px 10px ;
+    color: #8f8f8f;
+    font-weight: 600;
+    pointer-events: none;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    margin-bottom: 5rem;
+ }
+
+ 
+ .box form .textArea textarea:focus ~ span  {
+    display: none;
+ }
+
+ .textArea i {
+    display:block;
+    position: absolute;
+   left: 0;
+   bottom: -1em;
+   width: 100%;
+   height: 4px;
+   background-color: white;
+   pointer-events: none;
+   border-radius: 4px;
+   overflow: hidden;
+   transition: 0.5s;
+}
+
+.box form .textArea textarea:focus ~ i {
+    height: 200px;
+    transform: translateY(-35px);
+}
+
+.box form input[type="submit"] {
+    margin-top: 1rem;
+    border: none;
+    outline: none;
+    padding: 9px 25px;
+    background-color: white;
+    cursor: pointer;
+    font-size: 1em;
+    border-radius: 1rem;
+    font-weight: 600;
+    width: 100px;
 }

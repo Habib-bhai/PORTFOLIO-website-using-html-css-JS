@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
     
@@ -15,12 +16,12 @@
     <nav class="navbar"> 
         <div class="home">    <a href="/" > <button>HOME</button></a>    </div>  <!-- We can also create a UL for navBar  -->
         <div class="aboutMe"> <a href="#about" ><button>ABOUT </button></a>   </div>
-        <div class="hobbys"> <a href="#" ><button>HOBBIES </button></a>  </div>
+        <div class="hobbys"> <a href="#project" ><button>PORTFOLIO </button></a>  </div>
         <div class="logo" >
             <img src="./Asset/hero_section/logo.png" alt="logo" >
             <p class="logoParagraph">BRO-H</p> 
         </div>
-        <div class="contact"><a href="#"><button>CONTACT</button></a>   </div>
+        <div class="contact"><a href="#contacMe"><button>CONTACT</button></a>   </div>
         <div class="projects"><a href="#project" ><button>PROJECTS</button></a> </div>
         <div class="resume"><a href="/Asset/CV.pdf"  download ><button>RESUME</button></a>     </div>
     </nav>
@@ -143,9 +144,7 @@
     </div>
 
 
-    
-    
-    <div class="contactForm">
+    <!-- <div class="contactForm">
         <h1 class="contactHeading">CONTACT FORM</h1>
        
             <input type="text" name="name" placeholder="NAME" autocomplete="off" class="input">
@@ -153,8 +152,39 @@
             <textarea name="textArea" id="textArea" placeholder="HOW CAN I HELP YOUR" autocomplete="off" cols="80" rows="10" name="message"></textarea>
             <button type="submit" class="submit">SUBMIT</button>
        
+    </div> -->
+<div class="parentBox">
+
+    <div class="box" id="contacMe">
+        <span class="borderLine"></span>
+        <form >
+            <h2>Contact Me</h2>
+            <div class="inputBox" >
+                <input type="text" id="fullName" required>
+                <span>Full name</span>
+                <i></i>
+            </div>
+            <div class="inputBox" >
+                <input type="email" id="email" required>
+                <span>Your email</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="number" id="number" autocomplete="off" required>
+                <span>Enter your number</span>
+                <i></i>
+            </div>
+            <div class="textArea">
+                <textarea name="text"  cols="45" rows="10" ></textarea>
+                <span>How we can help you</span>
+               <i></i>
+            </div >
+            <input type="submit" value="Submit">
+        </form>
+        
     </div>
     
+</div>
 
 <script src="JS/app.js" ></script>
 
