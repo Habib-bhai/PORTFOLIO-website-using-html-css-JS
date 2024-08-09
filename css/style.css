@@ -377,7 +377,7 @@ border-radius: 1.5rem;
 .card1 {
     margin: 2rem;
     margin-left: 36.5%;
-    background-image: url(/Asset/projectCardsImgs/pic.jpg);
+    background-image: url("/Asset/projectCardsImgs/pic.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 1rem;
@@ -393,7 +393,7 @@ border-radius: 1.5rem;
 .card2 {
     margin: 2rem;
     margin-left: 36.5%;
-    background-image: url(/Asset/projectCardsImgs/currency-converter.jpg);
+    background-image: url("/Asset/projectCardsImgs/currency-converter.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 1rem;
@@ -408,7 +408,7 @@ border-radius: 1.5rem;
 .card3 {
     margin: 2rem;
     margin-left: 36.5%;
-    background-image: url(/Asset/projectCardsImgs/typing.jpg);
+    background-image: url("/Asset/projectCardsImgs/typing.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 1rem;
@@ -423,7 +423,7 @@ border-radius: 1.5rem;
 .card4 {
     margin: 2rem;
     margin-left: 36.5%;
-    background-image: url(/Asset/projectCardsImgs/w2.jpg);
+    background-image: url("/Asset/projectCardsImgs/w2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 1rem;
@@ -439,7 +439,7 @@ border-radius: 1.5rem;
 .card5 {
     margin: 2rem;
     margin-left: 36.5%;
-    background-image: url(/Asset/projectCardsImgs/todo-2.png);
+    background-image: url("/Asset/projectCardsImgs/todo-2.png");
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 1rem;
@@ -454,7 +454,7 @@ border-radius: 1.5rem;
 .card6 {
     margin: 2rem;
     margin-left: 36.5%;
-    background-image: url(/Asset/projectCardsImgs/atm.png);
+    background-image: url("/Asset/projectCardsImgs/atm.png");
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 1rem;
@@ -469,7 +469,7 @@ border-radius: 1.5rem;
 .card7 {
     margin: 2rem;
     margin-left: 36.5%;
-    background-image: url(/Asset/projectCardsImgs/guess-the-number.jpeg);
+    background-image: url("/Asset/projectCardsImgs/guess-the-number.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 1rem;
@@ -658,75 +658,6 @@ transition: transform 0.5s ease-in-out;
     padding: 20px;
     
 }
-
-/* .contactForm {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-    text-align: center;
-    width: 100%;
-    margin-top: 80%;
-    background-color: black
-  
-}
-
-.contactHeading {
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-    position: relative;
-    width: max-content;
-    z-index: 2;
-}
-
-.contactHeading::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 34px;
-    width: 100%;
-    border-radius: 5px;
-    z-index: -1;
-    background-color: #00C4F0;
-    transform: scaleX(0);
-    transition: transform 0.5s ease-in-out;
-}
-
-.contactHeading:hover.contactHeading::before {
-    transform: scaleX(1);
-}
-
-.input {
-    height: 1.8rem;
-    text-align: center;
-    outline: none;
-    border: none;
-    border-radius: 1rem;
-    margin-bottom: .5rem;
-    width: 30%;
-}
-
-textarea {
-    border-radius: 1rem;
-    text-align: center;
-}
-
-.submit {
-    margin-top: 1rem;
-    height: 3rem;
-    font-size: 20px;
-    font-weight: 600;
-    width: 7rem;
-    background-color: #00C4F0;
-    border-radius: 1.5rem;
- 
-}
-.submit:hover {
-    box-shadow: 0 0 15px 5px rgba(0, 212, 240, 0.6);
-}
- */
-
 
  .parentBox {
     display: flex;
