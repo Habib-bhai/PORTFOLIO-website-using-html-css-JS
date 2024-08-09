@@ -377,7 +377,7 @@ border-radius: 1.5rem;
 .card1 {
     margin: 2rem;
     margin-left: 36.5%;
-    background-image: url(./Asset/projectCardsImgs/pic.jpg);
+    background-image: url(/Asset/projectCardsImgs/pic.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 1rem;
@@ -393,7 +393,7 @@ border-radius: 1.5rem;
 .card2 {
     margin: 2rem;
     margin-left: 36.5%;
-    background-image: url(./Asset/projectCardsImgs/currency-converter.jpg);
+    background-image: url(/Asset/projectCardsImgs/currency-converter.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 1rem;
@@ -408,7 +408,7 @@ border-radius: 1.5rem;
 .card3 {
     margin: 2rem;
     margin-left: 36.5%;
-    background-image: url(./Asset/projectCardsImgs/typing.jpg);
+    background-image: url(/Asset/projectCardsImgs/typing.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 1rem;
@@ -423,7 +423,7 @@ border-radius: 1.5rem;
 .card4 {
     margin: 2rem;
     margin-left: 36.5%;
-    background-image: url(./Asset/projectCardsImgs/w2.jpg);
+    background-image: url(/Asset/projectCardsImgs/w2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 1rem;
