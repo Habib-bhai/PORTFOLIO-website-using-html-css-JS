@@ -62,15 +62,18 @@ button {
 }
 
 
+
 .resume:hover {
     background-color: rgba(192, 192, 192, 0.376);
     border-radius: 1em;
 }
 
+
 .hobbys:hover {
     background-color: rgba(192, 192, 192, 0.376);
     border-radius: 1em;
 }
+
 .logo {
 display: flex;    
 justify-content: center;
