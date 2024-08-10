@@ -546,7 +546,7 @@ padding: 0.5rem 0.5rem;
         align-items: center;
         transition: transform 0.5s ease-in-out;
         transform: translateY(0);
-        gap: 10rem;
+        gap: 15rem;
     }
     .senior h2 {
         font-size: 1rem;
