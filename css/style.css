@@ -126,19 +126,19 @@ padding: 0.5rem 0.5rem;
 
 /* SIDE BAR */
 .sideBar {
-    position: fixed;
-    top: 0;
+    position: sticky;
+    top: 1rem;
     right: 0;
-    height: 100vh;
+    height: 50vh;
     width: 250px;
-    z-index: 999 ;
+    z-index: 999;
     background-color: white;
     box-shadow: -10px 0 10px  rgba(0, 0,0, 0.1);
-    /* backdrop-filter: blur(10px); */
+    backdrop-filter: blur(10px);
     display: none;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     padding-left: 10px;
 }
 .sideBar button {
@@ -155,6 +155,9 @@ padding: 0.5rem 0.5rem;
         display: none;
     }
 
+    .sideBar { 
+        margin-top: 1rem;
+    }
     .menu-btn {
         display: block;
     }
@@ -172,10 +175,7 @@ padding: 0.5rem 0.5rem;
         border-radius: 1rem;
     
     }
-    .navbar button {
-        height: 0;
-        width: 0;
-    }
+ 
     .logo {
         display: flex;    
         justify-content: center;
@@ -196,13 +196,13 @@ padding: 0.5rem 0.5rem;
         }
         
 }
-
+/* 
 @media (min-width: 450px) {
     .sideBar {
         width: 100%;
         z-index: 1000;
     }
-}
+} */
 
   /* CSS for HERO SECTION */
  
@@ -361,7 +361,7 @@ padding: 0.5rem 0.5rem;
 }
 
 
-.bacgroundNone {
+.backgroundNone {
     background: none;
 }
 
@@ -430,7 +430,7 @@ padding: 0.5rem 0.5rem;
 }
 
 .art_appearance {
-    height: 25rem;
+    height: 24rem;
     z-index: 10;
     position: fixed; 
     bottom: 1px;
@@ -444,7 +444,7 @@ padding: 0.5rem 0.5rem;
 .senior-Animation {
  transform: translateY(-150px);   
 }
-
+/* 
 @media (max-width:480px){
     .art_appearance {
       display: none;
@@ -456,7 +456,7 @@ padding: 0.5rem 0.5rem;
       transform: none;   
      }
      
-}
+} */
 
 /* 
 /* Media Queries for Hero section */
@@ -602,7 +602,7 @@ padding: 0.5rem 0.5rem;
 .card1 {
     margin: 2rem;
     margin-left: 35%;
-    background-image: url("/Asset/projectCardsImgs/pic.jpg");
+    background-image: url(/Asset/projectCardsImgs/pic.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 1rem;
@@ -618,7 +618,7 @@ padding: 0.5rem 0.5rem;
 .card2 {
     margin: 2rem;
     margin-left: 35%;
-    background-image: url("/Asset/projectCardsImgs/currency-converter.jpg");
+    background-image: url(/Asset/projectCardsImgs/currency-converter.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 1rem;
@@ -633,7 +633,7 @@ padding: 0.5rem 0.5rem;
 .card3 {
     margin: 2rem;
     margin-left: 35%;
-    background-image: url("/Asset/projectCardsImgs/typing.jpg");
+    background-image: url(/Asset/projectCardsImgs/typing.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 1rem;
@@ -648,7 +648,7 @@ padding: 0.5rem 0.5rem;
 .card4 {
     margin: 2rem;
     margin-left: 35%;
-    background-image: url("/Asset/projectCardsImgs/w2.jpg");
+    background-image: url(/Asset/projectCardsImgs/w2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 1rem;
@@ -664,7 +664,7 @@ padding: 0.5rem 0.5rem;
 .card5 {
     margin: 2rem;
     margin-left: 35%;
-    background-image: url("/Asset/projectCardsImgs/todo-2.png");
+    background-image: url(/Asset/projectCardsImgs/todo-2.png);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 1rem;
@@ -679,7 +679,7 @@ padding: 0.5rem 0.5rem;
 .card6 {
     margin: 2rem;
     margin-left: 35%;
-    background-image: url("/Asset/projectCardsImgs/atm.png");
+    background-image: url(/Asset/projectCardsImgs/atm.png);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 1rem;
@@ -694,7 +694,7 @@ padding: 0.5rem 0.5rem;
 .card7 {
     margin: 2rem;
     margin-left: 35%;
-    background-image: url("/Asset/projectCardsImgs/guess-the-number.jpeg");
+    background-image: url(/Asset/projectCardsImgs/guess-the-number.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 1rem;
@@ -709,18 +709,17 @@ padding: 0.5rem 0.5rem;
 
 @media only screen and (min-width: 390px) and (max-width: 500px){
     .projectsCards {
-        width: 50%;
+        width: 60%;
     }
 
     .card1, .card2, .card3, .card4, .card5,  .card6, .card7 {
-        margin: 2rem;
+        margin: 1rem;
         margin-left: 28%;
         background-repeat: no-repeat;
         background-size: cover;
         border-radius: 1rem;
-        padding-top: 11rem;
+        /* padding-top: 11rem; */
         color: white;
-        /* background-color: ; */
         height: 15rem;
         position: sticky;
         top: 8rem;
