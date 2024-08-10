@@ -14,16 +14,26 @@
     
     <!-- NAVBAR -->
     <nav class="navbar"> 
-        <div class="home">    <a href="#" > <button>HOME</button></a>    </div>  <!-- We can also create a UL for navBar  -->
-        <div class="aboutMe"> <a href="#about" ><button>ABOUT </button></a>   </div>
-        <div class="hobbys"> <a href="#project" ><button>PORTFOLIO </button></a>  </div>
+        <div class="sideBar">
+            <a href="#" onclick=closeSidebar() ><svg xmlns="http://www.w3.org/2000/svg" height="34px" style="background-color: rgba(2, 72, 248, 0.475);" viewBox="0 -960 960 960" width="34px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a>
+            <div class="home">    <a href="#" > <button>HOME</button></a>    </div>  <!-- We can also create a UL for navBar  -->
+            <div class="aboutMe"> <a href="#about" ><button>ABOUT </button></a>   </div>
+            <div class="hobbys"> <a href="#project" ><button>PORTFOLIO </button></a>  </div>
+            <div class="contact"><a href="#contacMe"><button>CONTACT</button></a>   </div>
+            <div class="projects"><a href="#project" ><button>PROJECTS</button></a> </div>
+            <div class="resume"><a href="/Asset/CV.pdf"  download ><button>RESUME</button></a>     </div>    
+        </div>
+        <div class="home hideOnMobile" >    <a href="#" > <button>HOME</button></a>    </div>  <!-- We can also create a UL for navBar  -->
+        <div class="aboutMe hideOnMobile"> <a href="#about" ><button>ABOUT </button></a>   </div>
+        <div class="hobbys hideOnMobile"> <a href="#project" ><button>PORTFOLIO </button></a>  </div>
         <div class="logo" >
             <img src="./Asset/hero_section/logo.png" alt="logo" >
             <p class="logoParagraph">BRO-H</p> 
         </div>
-        <div class="contact"><a href="#contacMe"><button>CONTACT</button></a>   </div>
-        <div class="projects"><a href="#project" ><button>PROJECTS</button></a> </div>
-        <div class="resume"><a href="/Asset/CV.pdf"  download ><button>RESUME</button></a>     </div>
+        <div class="contact hideOnMobile" ><a href="#contacMe"><button>CONTACT</button></a>   </div>
+        <div class="projects hideOnMobile"><a href="#project" ><button>PROJECTS</button></a> </div>
+        <div class="resume hideOnMobile"><a href="/Asset/CV.pdf"  download ><button>RESUME</button></a>     </div>
+        <a href="#" onclick=showSidebar() class="menu-btn"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
     </nav>
         
         <!-- HERO SECTION STARTS FROM HERE -->
@@ -144,15 +154,7 @@
     </div>
 
 
-    <!-- <div class="contactForm">
-        <h1 class="contactHeading">CONTACT FORM</h1>
-       
-            <input type="text" name="name" placeholder="NAME" autocomplete="off" class="input">
-            <input type="email" name="email" placeholder="YOUR EMAIL ADDRESS" autocomplete="off" class="input">
-            <textarea name="textArea" id="textArea" placeholder="HOW CAN I HELP YOUR" autocomplete="off" cols="80" rows="10" name="message"></textarea>
-            <button type="submit" class="submit">SUBMIT</button>
-       
-    </div> -->
+
 <div class="parentBox">
 
     <div class="box" id="contacMe">
@@ -186,6 +188,17 @@
     
 </div>
 
+<script>
+    function showSidebar() {
+        const sidebar = document.body.querySelector(".sideBar")
+        sidebar.style.display = "block"
+    }
+
+    function closeSidebar() {
+        const sidebar = document.body.querySelector(".sideBar")
+        sidebar.style.display = "none"
+    }
+</script>
 <script src="JS/app.js" ></script>
 
 </body>

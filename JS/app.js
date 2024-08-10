@@ -40,6 +40,7 @@ logo.addEventListener("mouseleave", ()=> {
 
 // ANIMATION FOR PORTFOLIO BUTTON
 let hireMeBtn = document.body.querySelector(".hireMe")
+
 let arrowImg = document.createElement("img")
 arrowImg.setAttribute("id", "arrowID") //Attributes
 arrowImg.setAttribute("src","./Asset/Buttons/light.png")

@@ -92,6 +92,7 @@ border: 1px solid #00C4F0 ;
 height: 2.5rem;
 width: 10rem;
 border-radius: 1.5rem;
+padding: 0.5rem 0.5rem;
 }
 
 
@@ -101,7 +102,7 @@ border-radius: 1.5rem;
 }
 
 .logo  img {
-    height: 1.5rem;
+    max-height: 1.5rem;
 
 }
 /* 
@@ -122,6 +123,85 @@ border-radius: 1.5rem;
     animation: fadeIn 0.5s ease-in;
 }
 
+
+/* SIDE BAR */
+.sideBar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999 ;
+    background-color: rgba(255, 255, 255, 0.441);
+    box-shadow: -10px 0 10px  rgba(0, 0,0, 0.1);
+    backdrop-filter: blur(10px);
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 10px;
+}
+.sideBar button {
+    color: black;
+    /* width: 100%; */
+}
+
+.menu-btn {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .hideOnMobile {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .navbar {
+        position: sticky;
+        top: 0.6rem;
+        margin: 1rem;
+        height: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.5rem;
+        background-color: black;
+        border-radius: 1rem;
+    
+    }
+    .navbar button {
+        height: 0;
+        width: 0;
+    }
+    .logo {
+        display: flex;    
+        justify-content: center;
+        align-items: center;
+        color: white;
+        gap: 5px;
+        font-weight: 600;
+        border: 1px solid #00C4F0 ;
+        height: 1.5rem;
+        width: 6rem;
+        border-radius: 1rem;
+        padding: 0.5rem 0.5rem;
+        font-size: 0.6rem;
+        }
+        .logo  img {
+        height: 0.8rem;
+        
+        }
+        
+}
+
+@media (max-width: 450) {
+    .sideBar {
+        width: 100vw;
+    }
+}
 
   /* CSS for HERO SECTION */
  
@@ -161,7 +241,7 @@ border-radius: 1.5rem;
     
     .intro {
         margin-top: 10px;
-        width: 100%;
+        max-width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -212,6 +292,7 @@ border-radius: 1.5rem;
     transition: opacity 0.5s ease-out;
     opacity: 1;
 }
+
 
 
 /* portfolio or Hire me button styling */
@@ -287,6 +368,9 @@ border-radius: 1.5rem;
     display: none;
 }
 
+
+
+
 /* Senior STD */
 .senior {
     width: 95%;
@@ -303,6 +387,7 @@ border-radius: 1.5rem;
 .senior img {
     height: 1.5rem;
     margin-bottom: 10px;
+    max-width: 100%;
 }
 
 /* Intro and Profile Hiding Animation */
@@ -359,6 +444,132 @@ border-radius: 1.5rem;
  transform: translateY(-150px);   
 }
 
+@media (max-width:480px){
+    .art_appearance {
+      display: none;
+    }
+    .art_departure {
+            opacity: 0;
+     }
+     .senior-Animation {
+      transform: none;   
+     }
+     
+}
+
+/* 
+/* Media Queries for Hero section */
+@media only screen and  (390px <= width <= 500px) {
+    .navbar {
+        top: .5rem;
+        left: 4.2rem;
+        justify-content: space-evenly;
+        width: 18rem;
+    }
+    .hello {
+        margin-top: 1rem;
+        height: 1rem;
+        width:  3rem;
+        font-size: 10px;
+        border-radius: 1rem;
+    }
+    .name-intro img {
+        height: 0.8rem;
+        position: relative;
+        top: 0rem;
+        left: 3.5rem;
+    }
+    .intro  {
+        font-size: 1rem;
+    }
+    .genAi {
+        font-size: 1rem;
+    } 
+    .genAi img {
+        height: 2rem;
+        top: -1rem;
+        left: -8.5rem;
+    }
+    .ellipseImg {
+        height: 6rem;
+        width: 12rem;
+        left: 7.2rem;
+        bottom: 17.8rem;
+    }
+
+    .profileImg {
+        height: 15rem;
+        bottom: 17.8rem;
+        left: 6.6rem;
+    }
+
+    .portfolioOrHireMe {
+        height: 3rem;
+        width: 100%;
+        bottom: 17.8rem;
+        left: 0.2rem;
+    }
+    .buttons {
+        border-radius: 1rem;
+        width: 10rem;
+        height: 2rem;
+        
+    }
+    #portfolioBTN {
+        font-size: 1rem;
+        
+    }
+    .portfolio {
+        height: 1.5rem;
+        width: 5rem;
+        font-weight: 600;
+        border-radius: 1rem;
+    }
+    .portfolio img {
+    
+        height: 0.9rem;
+        transform: rotate(-35deg);
+    }
+
+    .hireMe{
+        font-size: 1rem;
+        width: 4rem;
+    }
+
+    .hireMe img {
+        height: 0.9rem;
+        transform: rotate(-35deg);
+    }
+    .hireMeTransformation {
+        width: 5rem;
+        font-weight: 600;
+        border-radius: 1rem;
+    }
+
+    .senior {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        transition: transform 0.5s ease-in-out;
+        transform: translateY(0);
+       gap: 7rem;
+    }
+    .senior h2 {
+        font-size: 0.8rem;
+    }
+    .seniorSTD1 {
+        margin-left: 4rem;
+    }
+    
+    .senior img {
+        height: 1rem;
+        margin-bottom: 0px;
+        max-width: 100%;
+    }
+
+} 
+
 /* PROJECTS SECTION STARTS FROM HERE */
 #project {
     color: white;
@@ -371,8 +582,20 @@ border-radius: 1.5rem;
 }
 
 
+@media (max-width: 480px){
+    #project {
+        margin-left: 5rem;
+        padding: 1rem;
+        border-bottom: 1px solid rgb(106, 105, 105);
+    } 
+
+    #project h1 {
+        font-size: 1rem; 
+    }
+}
+
 .cardParent{
-    min-width: 100%;
+    max-width: 100%;
     background: black;
 }
 
@@ -891,3 +1114,4 @@ transition: transform 0.5s ease-in-out;
     font-weight: 600;
     width: 100px;
 }
+
