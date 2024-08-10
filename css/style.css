@@ -126,7 +126,7 @@ padding: 0.5rem 0.5rem;
 
 /* SIDE BAR */
 .sideBar {
-    position: sticky;
+    position: fixed;
     top: 1rem;
     right: 0;
     height: 50vh;
@@ -275,6 +275,8 @@ padding: 0.5rem 0.5rem;
     width: 100%;
     display: flex;
     justify-content: center;
+    position: relative;
+    top: 13.7rem;
 }
 
 .ellipseImg {
@@ -444,7 +446,7 @@ padding: 0.5rem 0.5rem;
 .senior-Animation {
  transform: translateY(-150px);   
 }
-/* 
+
 @media (max-width:480px){
     .art_appearance {
       display: none;
@@ -456,7 +458,7 @@ padding: 0.5rem 0.5rem;
       transform: none;   
      }
      
-} */
+}
 
 /* 
 /* Media Queries for Hero section */
@@ -491,6 +493,10 @@ padding: 0.5rem 0.5rem;
         top: -1rem;
         left: -8.5rem;
     }
+
+    .ellipse {
+        top: 36.5rem;
+    }
     .ellipseImg {
         height: 6rem;
         width: 12rem;
@@ -507,8 +513,8 @@ padding: 0.5rem 0.5rem;
     .portfolioOrHireMe {
         height: 3rem;
         width: 100%;
-        position: absolute;
-        bottom: 24.4rem;
+        position: relative;
+        bottom: -8.8rem;
         left: 0.6rem;
     }
     .buttons {
@@ -545,11 +551,11 @@ padding: 0.5rem 0.5rem;
     .senior {
         width: 95%;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
         transition: transform 0.5s ease-in-out;
         transform: translateY(0);
-        gap: 15rem;
+        gap: 10rem;
     }
     .senior h2 {
         font-size: 1rem;
@@ -579,8 +585,6 @@ padding: 0.5rem 0.5rem;
 
 @media only screen and (min-width: 390px) and (max-width: 500px){
     #project {
-        margin-left: 5rem;
-        padding: 0rem;
         border-bottom: 1px solid rgb(106, 105, 105);
     } 
 
@@ -714,7 +718,7 @@ padding: 0.5rem 0.5rem;
 
     .card1, .card2, .card3, .card4, .card5,  .card6, .card7 {
         margin: 1rem;
-        margin-left: 28%;
+        margin-left: 20% ;
         background-repeat: no-repeat;
         background-size: cover;
         border-radius: 1rem;
