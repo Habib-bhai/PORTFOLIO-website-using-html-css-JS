@@ -200,15 +200,15 @@ border-radius: 1.5rem;
     height: 11rem;
     width: 25rem;
     position: absolute;
-    bottom:  -0.4rem;
-    left: 25.5rem;
+    bottom: 1rem;
+    left: 27rem;
 }
 .profileImg {
     height: 21rem;
     z-index: 5;
     position: absolute; 
-    bottom: 0rem;
-    left: 28rem;
+    bottom: 1rem;
+    left: 29.5rem;
     transition: opacity 0.5s ease-out;
     opacity: 1;
 }
@@ -224,8 +224,8 @@ border-radius: 1.5rem;
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: 1.5rem;
-    left: 0;
+    bottom: 2rem;
+    left: 0rem;
     
 }
 .portfolioOrHireMe button {
