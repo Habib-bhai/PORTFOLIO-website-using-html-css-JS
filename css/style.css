@@ -200,8 +200,8 @@ border-radius: 1.5rem;
     height: 11rem;
     width: 25rem;
     position: absolute;
-    bottom: 0;
-    left: 25rem;
+    bottom:  -0.4rem;
+    left: 25.5rem;
 }
 .profileImg {
     height: 21rem;
@@ -224,7 +224,7 @@ border-radius: 1.5rem;
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: 0;
+    bottom: 1.5rem;
     left: 0;
     
 }
@@ -383,7 +383,7 @@ border-radius: 1.5rem;
 
 .card1 {
     margin: 2rem;
-    margin-left: 36.5%;
+    margin-left: 35%;
     background-image: url("/Asset/projectCardsImgs/pic.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -399,7 +399,7 @@ border-radius: 1.5rem;
 
 .card2 {
     margin: 2rem;
-    margin-left: 36.5%;
+    margin-left: 35%;
     background-image: url("/Asset/projectCardsImgs/currency-converter.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -414,7 +414,7 @@ border-radius: 1.5rem;
 }
 .card3 {
     margin: 2rem;
-    margin-left: 36.5%;
+    margin-left: 35%;
     background-image: url("/Asset/projectCardsImgs/typing.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -429,7 +429,7 @@ border-radius: 1.5rem;
 }
 .card4 {
     margin: 2rem;
-    margin-left: 36.5%;
+    margin-left: 35%;
     background-image: url("/Asset/projectCardsImgs/w2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -445,7 +445,7 @@ border-radius: 1.5rem;
 
 .card5 {
     margin: 2rem;
-    margin-left: 36.5%;
+    margin-left: 35%;
     background-image: url("/Asset/projectCardsImgs/todo-2.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -460,7 +460,7 @@ border-radius: 1.5rem;
 }
 .card6 {
     margin: 2rem;
-    margin-left: 36.5%;
+    margin-left: 35%;
     background-image: url("/Asset/projectCardsImgs/atm.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -475,7 +475,7 @@ border-radius: 1.5rem;
 }
 .card7 {
     margin: 2rem;
-    margin-left: 36.5%;
+    margin-left: 35%;
     background-image: url("/Asset/projectCardsImgs/guess-the-number.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
