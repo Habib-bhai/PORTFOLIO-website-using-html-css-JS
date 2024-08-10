@@ -494,18 +494,21 @@ padding: 0.5rem 0.5rem;
     .ellipseImg {
         height: 6rem;
         width: 12rem;
+        position: absolute;
         left: 7.2rem;
-        bottom: 24rem;
+        bottom: 24.4rem;
     }
     .profileImg {
         height: 15rem;
-        bottom: 24rem;
+        position: absolute;
+        bottom: 24.4rem;
         left: 6.4rem;
     }
     .portfolioOrHireMe {
         height: 3rem;
         width: 100%;
-        bottom: 24rem;
+        position: absolute;
+        bottom: 24.4rem;
         left: 0.6rem;
     }
     .buttons {
@@ -574,10 +577,10 @@ padding: 0.5rem 0.5rem;
 }
 
 
-@media only screen and (min-width: 390px) and (max-width: 720px){
+@media only screen and (min-width: 390px) and (max-width: 500px){
     #project {
         margin-left: 5rem;
-        padding: 1rem;
+        padding: 0rem;
         border-bottom: 1px solid rgb(106, 105, 105);
     } 
 
@@ -704,7 +707,26 @@ padding: 0.5rem 0.5rem;
     overflow: hidden;
 }
 
+@media only screen and (min-width: 390px) and (max-width: 500px){
+    .projectsCards {
+        width: 50%;
+    }
 
+    .card1, .card2, .card3, .card4, .card5,  .card6, .card7 {
+        margin: 2rem;
+        margin-left: 28%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 1rem;
+        padding-top: 11rem;
+        color: white;
+        /* background-color: ; */
+        height: 15rem;
+        position: sticky;
+        top: 8rem;
+        overflow: hidden;
+    }
+}
 .cardContent {
     display: flex;
     flex-direction: column;
