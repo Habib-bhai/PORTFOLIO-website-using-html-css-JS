@@ -459,7 +459,7 @@ padding: 0.5rem 0.5rem;
 
 /* 
 /* Media Queries for Hero section */
-@media only screen and  (390px <= width <= 500px) {
+@media only screen and (min-width: 390px) and (max-width: 500px) {
     .navbar {
         top: .5rem;
         left: 4.2rem;
@@ -469,7 +469,7 @@ padding: 0.5rem 0.5rem;
     .hello {
         margin-top: 1rem;
         height: 1rem;
-        width:  3rem;
+        width: 3rem;
         font-size: 10px;
         border-radius: 1rem;
     }
@@ -479,12 +479,12 @@ padding: 0.5rem 0.5rem;
         top: 0rem;
         left: 3.5rem;
     }
-    .intro  {
+    .intro {
         font-size: 1rem;
     }
     .genAi {
         font-size: 1rem;
-    } 
+    }
     .genAi img {
         height: 2rem;
         top: -1rem;
@@ -496,13 +496,11 @@ padding: 0.5rem 0.5rem;
         left: 7.2rem;
         bottom: 17.8rem;
     }
-
     .profileImg {
         height: 15rem;
         bottom: 17.8rem;
         left: 6.6rem;
     }
-
     .portfolioOrHireMe {
         height: 3rem;
         width: 100%;
@@ -513,11 +511,9 @@ padding: 0.5rem 0.5rem;
         border-radius: 1rem;
         width: 10rem;
         height: 2rem;
-        
     }
     #portfolioBTN {
         font-size: 1rem;
-        
     }
     .portfolio {
         height: 1.5rem;
@@ -526,16 +522,13 @@ padding: 0.5rem 0.5rem;
         border-radius: 1rem;
     }
     .portfolio img {
-    
         height: 0.9rem;
         transform: rotate(-35deg);
     }
-
-    .hireMe{
+    .hireMe {
         font-size: 1rem;
         width: 4rem;
     }
-
     .hireMe img {
         height: 0.9rem;
         transform: rotate(-35deg);
@@ -545,15 +538,14 @@ padding: 0.5rem 0.5rem;
         font-weight: 600;
         border-radius: 1rem;
     }
-
     .senior {
         width: 100%;
         display: flex;
         justify-content: space-between;
-        align-items:center;
+        align-items: center;
         transition: transform 0.5s ease-in-out;
         transform: translateY(0);
-       gap: 7rem;
+        gap: 7rem;
     }
     .senior h2 {
         font-size: 0.8rem;
@@ -561,14 +553,12 @@ padding: 0.5rem 0.5rem;
     .seniorSTD1 {
         margin-left: 4rem;
     }
-    
     .senior img {
         height: 1rem;
         margin-bottom: 0px;
         max-width: 100%;
     }
-
-} 
+}
 
 /* PROJECTS SECTION STARTS FROM HERE */
 #project {
