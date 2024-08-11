@@ -276,7 +276,7 @@ padding: 0.5rem 0.5rem;
     display: flex;
     justify-content: center;
     position: relative;
-    top: 13.7rem;
+    top: 18rem;
 }
 
 .ellipseImg {
@@ -711,25 +711,7 @@ padding: 0.5rem 0.5rem;
     overflow: hidden;
 }
 
-@media only screen and (min-width: 390px) and (max-width: 500px){
-    .projectsCards {
-        width: 60%;
-    }
 
-    .card1, .card2, .card3, .card4, .card5,  .card6, .card7 {
-        margin: 1rem;
-        margin-left: 20% ;
-        background-repeat: no-repeat;
-        background-size: cover;
-        border-radius: 1rem;
-        /* padding-top: 11rem; */
-        color: white;
-        height: 15rem;
-        position: sticky;
-        top: 8rem;
-        overflow: hidden;
-    }
-}
 .cardContent {
     display: flex;
     flex-direction: column;
@@ -746,11 +728,7 @@ padding: 0.5rem 0.5rem;
 }
 
 
-.cardBTN:hover,:focus {
-    cursor: pointer;
-    transition: box-shadow 0.5s ease-in-out;
-    box-shadow: 0 0 15px 5px rgba(0, 196, 240, 0.6);
-}
+
 .cardTitle::after {
     content: "";
     position: absolute;
@@ -792,34 +770,44 @@ padding: 0.5rem 0.5rem;
     position: relative;
 
 }
+    @media (hover: hover) {
 
-
-@media (hover) {
-    .card1:hover .cardContent, .card1:focus-within .cardContent {
+        .cardBTN:hover,:focus {
+            cursor: pointer;
+            transition: box-shadow 0.5s ease-in-out;
+            box-shadow: 0 0 15px 5px rgba(0, 196, 240, 0.6);
+        } 
+        .cardBTN:hover,:focus {
+            cursor: pointer;
+            transition: box-shadow 0.5s ease-in-out;
+            box-shadow: 0 0 15px 5px rgba(0, 196, 240, 0.6);
+        }
+        
+        .card1:hover .cardContent, .card1:focus-within .cardContent {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    .card2:hover .cardContent, .card2:focus-within .cardContent{
         opacity: 1;
         transform: translateY(0);
     }
-    .card2:hover .cardContent, .card1:focus-within .cardContent{
+    .card3:hover .cardContent, .card3:focus-within .cardContent {
         opacity: 1;
         transform: translateY(0);
     }
-    .card3:hover .cardContent, .card1:focus-within .cardContent {
+    .card4:hover .cardContent, .card4:focus-within .cardContent{
         opacity: 1;
         transform: translateY(0);
     }
-    .card4:hover .cardContent, .card1:focus-within .cardContent{
+    .card5:hover .cardContent, .card5:focus-within .cardContent {
         opacity: 1;
         transform: translateY(0);
     }
-    .card5:hover .cardContent, .card1:focus-within .cardContent {
+    .card6:hover .cardContent, .card6:focus-within .cardContent {
         opacity: 1;
         transform: translateY(0);
     }
-    .card6:hover .cardContent, .card1:focus-within .cardContent {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    .card7:hover .cardContent, .card1:focus-within .cardContent{
+    .card7:hover .cardContent, .card7:focus-within .cardContent{
         opacity: 1;
         transform: translateY(0);
     }
@@ -830,7 +818,47 @@ padding: 0.5rem 0.5rem;
     .cardTitle:hover.cardTitle::after {
         transform: scaleX(1);
     }
+    
 }
+    
+    @media only screen and (min-width: 390px) and (max-width: 500px){
+        .projectsCards {
+            width: 60%;
+        }
+    
+        .card1, .card2, .card3, .card4, .card5,  .card6, .card7 {
+            margin: 1rem;
+            margin-left: 20% ;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 1rem; 
+            /* padding-top: 11rem; */
+             color: white;
+            height: 15rem;
+            position: sticky;
+            top: 8rem;
+            overflow: hidden;
+        }
+         /* .cardTitle::after {
+            transition: none;
+        }
+
+       .cardTitle:hover.cardTitle::after {
+        transform: none;
+    } */
+
+        /* .card1, .card2, .card3, .card4, .card5,  .card6, .card7 {
+
+        } */
+    }
+
+
+
+
+
+
+
+
 .aboutMeSection {
     display: flex;
     flex-direction: column;
