@@ -918,6 +918,10 @@ button {
     }
     .cardContent h2 {
 
+        font-size: 0.8rem;
+    }
+
+    .cardContent .npx {
         font-size: 1rem;
     }
     .cardBTN:hover,
