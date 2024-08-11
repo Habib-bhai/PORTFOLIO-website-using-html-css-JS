@@ -276,7 +276,7 @@ padding: 0.5rem 0.5rem;
     display: flex;
     justify-content: center;
     position: relative;
-    top: 18rem;
+    top: 13.7rem;
 }
 
 .ellipseImg {
@@ -770,7 +770,7 @@ padding: 0.5rem 0.5rem;
     position: relative;
 
 }
-    @media (hover: hover) {
+
 
         .cardBTN:hover,:focus {
             cursor: pointer;
@@ -819,7 +819,35 @@ padding: 0.5rem 0.5rem;
         transform: scaleX(1);
     }
     
-}
+
+    @media only screen and (max-width: 768px) {
+        .cardBTN:hover, .cardBTN:focus {
+            cursor: default;
+            transition: none;
+            box-shadow: none;
+        }
+    
+        .card1:hover .cardContent, .card1:focus-within .cardContent,
+        .card2:hover .cardContent, .card2:focus-within .cardContent,
+        .card3:hover .cardContent, .card3:focus-within .cardContent,
+        .card4:hover .cardContent, .card4:focus-within .cardContent,
+        .card5:hover .cardContent, .card5:focus-within .cardContent,
+        .card6:hover .cardContent, .card6:focus-within .cardContent,
+        .card7:hover .cardContent, .card7:focus-within .cardContent {
+            opacity: unset;
+            transform: unset;
+        }
+    
+        .cardTitle::after {
+            transform: unset;
+        }
+    
+        .cardTitle:hover.cardTitle::after {
+            transform: unset;
+        }
+    }
+    
+
     
     @media only screen and (min-width: 390px) and (max-width: 500px){
         .projectsCards {
@@ -839,17 +867,7 @@ padding: 0.5rem 0.5rem;
             top: 8rem;
             overflow: hidden;
         }
-         /* .cardTitle::after {
-            transition: none;
-        }
-
-       .cardTitle:hover.cardTitle::after {
-        transform: none;
-    } */
-
-        /* .card1, .card2, .card3, .card4, .card5,  .card6, .card7 {
-
-        } */
+     
     }
 
 
