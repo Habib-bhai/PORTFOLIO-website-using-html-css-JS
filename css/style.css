@@ -674,7 +674,7 @@ button {
 .card1 {
     margin: 2rem;
     margin-left: 35%;
-    background-image: url(/Asset/projectCardsImgs/pic.jpg);
+    background-image: url("/Asset/projectCardsImgs/pic.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 1rem;
@@ -690,7 +690,7 @@ button {
 .card2 {
     margin: 2rem;
     margin-left: 35%;
-    background-image: url(/Asset/projectCardsImgs/currency-converter.jpg);
+    background-image: url("/Asset/projectCardsImgs/currency-converter.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 1rem;
@@ -706,7 +706,7 @@ button {
 .card3 {
     margin: 2rem;
     margin-left: 35%;
-    background-image: url(/Asset/projectCardsImgs/typing.jpg);
+    background-image: url("/Asset/projectCardsImgs/typing.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 1rem;
@@ -722,7 +722,7 @@ button {
 .card4 {
     margin: 2rem;
     margin-left: 35%;
-    background-image: url(/Asset/projectCardsImgs/w2.jpg);
+    background-image: url("/Asset/projectCardsImgs/w2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 1rem;
@@ -738,7 +738,7 @@ button {
 .card5 {
     margin: 2rem;
     margin-left: 35%;
-    background-image: url(/Asset/projectCardsImgs/todo-2.png);
+    background-image: url("/Asset/projectCardsImgs/todo-2.png");
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 1rem;
@@ -754,7 +754,7 @@ button {
 .card6 {
     margin: 2rem;
     margin-left: 35%;
-    background-image: url(/Asset/projectCardsImgs/atm.png);
+    background-image: url("/Asset/projectCardsImgs/atm.png");
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 1rem;
@@ -770,7 +770,7 @@ button {
 .card7 {
     margin: 2rem;
     margin-left: 35%;
-    background-image: url(/Asset/projectCardsImgs/guess-the-number.jpeg);
+    background-image: url("/Asset/projectCardsImgs/guess-the-number.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 1rem;
@@ -1047,7 +1047,7 @@ button {
     background-color: #00C4F0;
     border-top-right-radius: 50%;
     border-top-left-radius: 50%;
-    background-image: url(/Asset/Your_pics/profile2-removebg-preview.png);
+    background-image: url("/Asset/Your_pics/profile2-removebg-preview.png");
     background-size: cover;
     background-repeat: no-repeat;
     padding: 20px;
