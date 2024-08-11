@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
 
@@ -8,12 +7,12 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: "Urbanist",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-family: "Urbanist", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
 }
 
 
-    /* CSS for Navbar */
+/* CSS for Navbar */
 button {
     outline: none;
     border: none;
@@ -36,7 +35,7 @@ button {
     gap: 5rem;
     background-color: black;
     border-radius: 1.4rem;
-
+    z-index: 999;
 }
 
 .home {
@@ -52,6 +51,7 @@ button {
     background-color: rgba(192, 192, 192, 0.376);
     border-radius: 1em;
 }
+
 /* 
 .aboutMe:active {
     background-color: #00C4F0;
@@ -82,17 +82,17 @@ button {
 }
 
 .logo {
-display: flex;    
-justify-content: center;
-align-items: center;
-color: white;
-gap: 5px;
-font-weight: 600;
-border: 1px solid #00C4F0 ;
-height: 2.5rem;
-width: 10rem;
-border-radius: 1.5rem;
-padding: 0.5rem 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    gap: 5px;
+    font-weight: 600;
+    border: 1px solid #00C4F0;
+    height: 2.5rem;
+    width: 10rem;
+    border-radius: 1.5rem;
+    padding: 0.5rem 0.5rem;
 }
 
 
@@ -101,49 +101,77 @@ padding: 0.5rem 0.5rem;
     display: none;
 }
 
-.logo  img {
+.logo img {
     max-height: 1.5rem;
 
 }
+
 /* 
 .animated-element {
     opacity: 0;
   } */
-  
-  @keyframes fadeIn {
-      from {
-          opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
     }
-    
-  .animate {
+
+    to {
+        opacity: 1;
+    }
+}
+
+.animate {
     animation: fadeIn 0.5s ease-in;
 }
 
 
 /* SIDE BAR */
+
+
+
 .sideBar {
     position: fixed;
-    top: 1rem;
+    top: 0.3rem;
     right: 0;
     height: 50vh;
     width: 250px;
     z-index: 999;
-    background-color: white;
-    box-shadow: -10px 0 10px  rgba(0, 0,0, 0.1);
+    background-color: rgba(255, 255, 255, 0.326);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
-    display: none;
-    flex-direction: column;
+    display: block;
+    /* flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding-left: 10px;
+    align-items: center; */
 }
-.sideBar button {
+
+.sideBar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-left: 20px;
+    gap: 1rem;
+    z-index: 999;
+}
+
+.sideBar ul li {
+    list-style: none;
+}
+
+.sideBar ul li:hover {
+    cursor: pointer;
+}
+
+.sideBar ul li a {
+    text-decoration: none;
     color: black;
-    /* width: 100%; */
+    font-weight: 600;
+}
+
+.main {
+    z-index: -1;
 }
 
 .menu-btn {
@@ -155,15 +183,15 @@ padding: 0.5rem 0.5rem;
         display: none;
     }
 
-    .sideBar { 
+    .sideBar {
         margin-top: 1rem;
     }
+
     .menu-btn {
         display: block;
     }
 
     .navbar {
-        position: sticky;
         top: 0.6rem;
         margin: 1rem;
         height: 1.5rem;
@@ -173,85 +201,91 @@ padding: 0.5rem 0.5rem;
         gap: 0.5rem;
         background-color: black;
         border-radius: 1rem;
-    
     }
- 
+
     .logo {
-        display: flex;    
-        justify-content: center;
-        align-items: center;
         color: white;
         gap: 5px;
         font-weight: 600;
-        border: 1px solid #00C4F0 ;
+        border: 1px solid #00C4F0;
         height: 1.5rem;
         width: 6rem;
         border-radius: 1rem;
         padding: 0.5rem 0.5rem;
         font-size: 0.6rem;
-        }
-        .logo  img {
+    }
+
+    .logo img {
         height: 0.8rem;
-        
-        }
-        
+
+    }
+
 }
+
 /* 
 @media (min-width: 450px) {
     .sideBar {
         width: 100%;
         z-index: 1000;
-    }
-} */
+        }
+        } */
 
-  /* CSS for HERO SECTION */
- 
-  /* INTRO HEADINGS ELLIPSE AND PROFILE IMG */
-  .name-intro {
-      width: 100%;
-      
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transition: transform 0.5s ease-in-out, height 0.5s ease-in-out;
-      transform: translateY(0);
-    }
-    .name-intro img {
-        height: 1rem;
-        position: relative;
-        top: 0.2rem;
-        left: 4rem;
-    }
+/* CSS for HERO SECTION */
+
+/* INTRO HEADINGS ELLIPSE AND PROFILE IMG */
+.name-intro {
+    width: 100%;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease-in-out, height 0.5s ease-in-out;
+    transform: translateY(0);
+}
+
+.name-intro img {
+    height: 1rem;
+    position: relative;
+    top: 0.2rem;
+    left: 4rem;
+    z-index: -1;
+}
+
+.hello {
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+    border: 1px solid black;
+    z-index: -1;
+    font-weight: 900;
+    transition: height 0.5s ease-in-out, width 0.5s ease-in-out, font-size 0.5s ease-in-out, border-radius 0.5s ease-in-out;
+    height: 1.5rem;
+    width: 3rem;
+    font-size: 8px;
+    border-radius: 1rem;
+
+
+}
+
+.intro {
+    margin-top: 10px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    transition: opacity 0.7s ease-out, transform 0.7s ease-in-out;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.intro h1 {
+    z-index: -1;
     
-    .hello {
-        margin-top: 2.5rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 1px;
-        border: 1px solid black;
-        font-weight: 900;
-        transition: height 0.5s ease-in-out, width 0.5s ease-in-out, font-size 0.5s ease-in-out, border-radius 0.5s ease-in-out ;
-        height: 1.5rem;
-        width:  3rem;
-        font-size: 8px;
-        border-radius: 1rem;
-        
-        
-    }
-    
-    .intro {
-        margin-top: 10px;
-        max-width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.5rem;
-        transition: opacity 0.7s ease-out, transform 0.7s ease-in-out;
-        opacity: 1;
-        transform: translateY(0);
-    }
-    
+}
+
 .habib {
     margin-left: 10px;
     color: #00C4F0;
@@ -263,12 +297,15 @@ padding: 0.5rem 0.5rem;
     transition: opacity 0.5s ease-out, transform 0.5s ease-in-out;
     opacity: 1;
     transform: translateY(0);
+    z-index: -1;
 }
+
 .genAi img {
     height: 70px;
     position: relative;
     top: -1.5rem;
     left: -15.5rem;
+    z-index: inherit;
 }
 
 .ellipse {
@@ -277,6 +314,7 @@ padding: 0.5rem 0.5rem;
     justify-content: center;
     position: relative;
     top: 13.7rem;
+    z-index: -1;
 }
 
 .ellipseImg {
@@ -286,10 +324,11 @@ padding: 0.5rem 0.5rem;
     bottom: 1rem;
     left: 27rem;
 }
+
 .profileImg {
     height: 21rem;
     z-index: 5;
-    position: absolute; 
+    position: absolute;
     bottom: 1rem;
     left: 29.5rem;
     transition: opacity 0.5s ease-out;
@@ -310,12 +349,13 @@ padding: 0.5rem 0.5rem;
     position: absolute;
     bottom: 2rem;
     left: 0rem;
-    
+
 }
+
 .portfolioOrHireMe button {
     color: black;
     font-size: 1rem;
-    
+
 }
 
 .buttons {
@@ -328,7 +368,8 @@ padding: 0.5rem 0.5rem;
     justify-content: center;
     align-items: center;
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    -webkit-backdrop-filter: blur(10px);
+    /* For Safari */
 }
 
 .portfolio {
@@ -341,8 +382,9 @@ padding: 0.5rem 0.5rem;
     justify-content: center;
     align-items: center;
 }
+
 .portfolio img {
-    
+
     height: 1.5rem;
     transform: rotate(-35deg);
 }
@@ -353,7 +395,7 @@ padding: 0.5rem 0.5rem;
     transition: box-shadow 0.5s ease-in-out;
     border: 3px solid #0c9bbb;
     box-shadow: 0 0 10px #fff679;
-    
+
     width: 6.5rem;
     font-weight: 600;
     border-radius: 2rem;
@@ -379,10 +421,11 @@ padding: 0.5rem 0.5rem;
     width: 95%;
     display: flex;
     justify-content: space-between;
-    align-items:center;
+    align-items: center;
     transition: transform 0.5s ease-in-out;
     transform: translateY(0);
 }
+
 .seniorSTD1 {
     margin-left: 4rem;
 }
@@ -407,14 +450,15 @@ padding: 0.5rem 0.5rem;
         }
         
         } */
-        
-        
-        .slideAndHide {
-            opacity: 0;
-            transform: translateY(150px);
-        }
-        
-        .ProfileImgOpacity {
+
+
+.slideAndHide {
+    opacity: 0;
+    transform: translateY(150px);
+    z-index: -1;
+}
+
+.ProfileImgOpacity {
     /* transition: opacity 0.5s ease-out; */
     opacity: 0;
 }
@@ -423,9 +467,10 @@ padding: 0.5rem 0.5rem;
 .name-intro-animation {
     transform: translateY(150px);
 }
+
 .hello-animation {
     height: 5rem;
-    width:  5rem;
+    width: 5rem;
     font-size: 1.5rem;
     border-radius: 50%;
 
@@ -434,30 +479,33 @@ padding: 0.5rem 0.5rem;
 .art_appearance {
     height: 24rem;
     z-index: 10;
-    position: fixed; 
+    position: fixed;
     bottom: 1px;
     transition: opacity 0.3s ease-in;
     opacity: 0;
 }
 
 .art_departure {
-   opacity: 1;
-}
-.senior-Animation {
- transform: translateY(-150px);   
+    opacity: 1;
 }
 
-@media (max-width:480px){
+.senior-Animation {
+    transform: translateY(-150px);
+}
+
+@media (max-width:480px) {
     .art_appearance {
-      display: none;
+        display: none;
     }
+
     .art_departure {
-            opacity: 0;
-     }
-     .senior-Animation {
-      transform: none;   
-     }
-     
+        opacity: 0;
+    }
+
+    .senior-Animation {
+        transform: none;
+    }
+
 }
 
 /* 
@@ -469,6 +517,7 @@ padding: 0.5rem 0.5rem;
         justify-content: space-evenly;
         width: 18rem;
     }
+
     .hello {
         margin-top: 1rem;
         height: 1rem;
@@ -476,18 +525,22 @@ padding: 0.5rem 0.5rem;
         font-size: 10px;
         border-radius: 1rem;
     }
+
     .name-intro img {
         height: 0.8rem;
         position: relative;
         top: 0rem;
         left: 3.5rem;
     }
+
     .intro {
         font-size: 1rem;
     }
+
     .genAi {
         font-size: 1rem;
     }
+
     .genAi img {
         height: 2rem;
         top: -1rem;
@@ -497,6 +550,7 @@ padding: 0.5rem 0.5rem;
     .ellipse {
         top: 36.5rem;
     }
+
     .ellipseImg {
         height: 6rem;
         width: 12rem;
@@ -504,12 +558,14 @@ padding: 0.5rem 0.5rem;
         left: 7.2rem;
         bottom: 24.4rem;
     }
+
     .profileImg {
         height: 15rem;
         position: absolute;
         bottom: 24.4rem;
         left: 6.4rem;
     }
+
     .portfolioOrHireMe {
         height: 3rem;
         width: 100%;
@@ -517,37 +573,45 @@ padding: 0.5rem 0.5rem;
         bottom: -8.8rem;
         left: 0.6rem;
     }
+
     .buttons {
         border-radius: 1rem;
         width: 10rem;
         height: 2rem;
     }
+
     #portfolioBTN {
         font-size: 1rem;
     }
+
     .portfolio {
         height: 1.5rem;
         width: 5rem;
         font-weight: 600;
         border-radius: 1rem;
     }
+
     .portfolio img {
         height: 0.9rem;
         transform: rotate(-35deg);
     }
+
     .hireMe {
         font-size: 1rem;
         width: 4rem;
     }
+
     .hireMe img {
         height: 0.9rem;
         transform: rotate(-35deg);
     }
+
     .hireMeTransformation {
         width: 5rem;
         font-weight: 600;
         border-radius: 1rem;
     }
+
     .senior {
         width: 95%;
         display: flex;
@@ -557,13 +621,16 @@ padding: 0.5rem 0.5rem;
         transform: translateY(0);
         gap: 10rem;
     }
+
     .senior h2 {
         font-size: 1rem;
         width: 100%;
     }
+
     .seniorSTD1 {
         margin-left: 2rem;
     }
+
     .senior img {
         height: 1rem;
         margin-bottom: 0px;
@@ -578,29 +645,30 @@ padding: 0.5rem 0.5rem;
     padding: 2rem;
     border-bottom: 1px solid rgb(106, 105, 105);
 }
+
 .portfoloioText {
     color: #00C4F0;
 }
 
 
-@media only screen and (min-width: 390px) and (max-width: 500px){
+@media only screen and (min-width: 390px) and (max-width: 500px) {
     #project {
         border-bottom: 1px solid rgb(106, 105, 105);
-    } 
+    }
 
     #project h1 {
-        font-size: 1rem; 
+        font-size: 1rem;
     }
 }
 
-.cardParent{
+.cardParent {
     max-width: 100%;
     background: black;
 }
 
 .projectsCards {
     width: 30%;
-    
+
 }
 
 .card1 {
@@ -634,6 +702,7 @@ padding: 0.5rem 0.5rem;
     top: 8rem;
     overflow: hidden;
 }
+
 .card3 {
     margin: 2rem;
     margin-left: 35%;
@@ -649,6 +718,7 @@ padding: 0.5rem 0.5rem;
     top: 8rem;
     overflow: hidden;
 }
+
 .card4 {
     margin: 2rem;
     margin-left: 35%;
@@ -680,6 +750,7 @@ padding: 0.5rem 0.5rem;
     top: 8rem;
     overflow: hidden;
 }
+
 .card6 {
     margin: 2rem;
     margin-left: 35%;
@@ -695,6 +766,7 @@ padding: 0.5rem 0.5rem;
     top: 8rem;
     overflow: hidden;
 }
+
 .card7 {
     margin: 2rem;
     margin-left: 35%;
@@ -720,11 +792,11 @@ padding: 0.5rem 0.5rem;
     border-radius: 1rem;
     /* --padding : 2rem */
     padding: 2em;
-    background: linear-gradient(hsl(0, 0%, 0%, 0),hsla(0, 0%, 0%, 0.637) 20%,hsla(176, 92%, 72%, 0.637));
+    background: linear-gradient(hsl(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.637) 20%, hsla(176, 92%, 72%, 0.637));
     /* background: #000; */
     transform: translateY(75%);
     opacity: 0;
-    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out ;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
 }
 
 
@@ -737,9 +809,10 @@ padding: 0.5rem 0.5rem;
     height: 3px;
     width: 100%;
     background-color: #00C4F0;
-    
+
     transition: transform 0.3s ease-in-out;
 }
+
 .cardBTN {
     margin-top: 1rem;
     height: 2rem;
@@ -755,9 +828,10 @@ padding: 0.5rem 0.5rem;
 
 .cardPara {
     margin-top: 1rem;
-    font-weight:600;
+    font-weight: 600;
     min-height: 200px;
 }
+
 .npx {
     margin-top: 2rem;
     color: black;
@@ -772,103 +846,143 @@ padding: 0.5rem 0.5rem;
 }
 
 
-        .cardBTN:hover,:focus {
-            cursor: pointer;
-            transition: box-shadow 0.5s ease-in-out;
-            box-shadow: 0 0 15px 5px rgba(0, 196, 240, 0.6);
-        } 
-        .cardBTN:hover,:focus {
-            cursor: pointer;
-            transition: box-shadow 0.5s ease-in-out;
-            box-shadow: 0 0 15px 5px rgba(0, 196, 240, 0.6);
-        }
-        
-        .card1:hover .cardContent, .card1:focus-within .cardContent {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    .card2:hover .cardContent, .card2:focus-within .cardContent{
+.cardBTN:hover,
+:focus {
+    cursor: pointer;
+    transition: box-shadow 0.5s ease-in-out;
+    box-shadow: 0 0 15px 5px rgba(0, 196, 240, 0.6);
+}
+
+.cardBTN:hover,
+:focus {
+    cursor: pointer;
+    transition: box-shadow 0.5s ease-in-out;
+    box-shadow: 0 0 15px 5px rgba(0, 196, 240, 0.6);
+}
+
+.card1:hover .cardContent,
+.card1:focus-within .cardContent {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card2:hover .cardContent,
+.card2:focus-within .cardContent {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card3:hover .cardContent,
+.card3:focus-within .cardContent {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card4:hover .cardContent,
+.card4:focus-within .cardContent {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card5:hover .cardContent,
+.card5:focus-within .cardContent {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card6:hover .cardContent,
+.card6:focus-within .cardContent {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card7:hover .cardContent,
+.card7:focus-within .cardContent {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.cardTitle::after {
+    transform: scaleX(0);
+}
+
+.cardTitle:hover.cardTitle::after {
+    transform: scaleX(1);
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .cardContent {
+        transform: translateY(-70%);
         opacity: 1;
-        transform: translateY(0);
     }
-    .card3:hover .cardContent, .card3:focus-within .cardContent {
-        opacity: 1;
-        transform: translateY(0);
+    .cardContent h2 {
+
+        font-size: 1rem;
     }
-    .card4:hover .cardContent, .card4:focus-within .cardContent{
-        opacity: 1;
-        transform: translateY(0);
+    .cardBTN:hover,
+    .cardBTN:focus {
+        cursor: default;
+        transition: none;
+        box-shadow: none;
     }
-    .card5:hover .cardContent, .card5:focus-within .cardContent {
-        opacity: 1;
-        transform: translateY(0);
+
+    .card1:hover .cardContent,
+    .card1:focus-within .cardContent,
+    .card2:hover .cardContent,
+    .card2:focus-within .cardContent,
+    .card3:hover .cardContent,
+    .card3:focus-within .cardContent,
+    .card4:hover .cardContent,
+    .card4:focus-within .cardContent,
+    .card5:hover .cardContent,
+    .card5:focus-within .cardContent,
+    .card6:hover .cardContent,
+    .card6:focus-within .cardContent,
+    .card7:hover .cardContent,
+    .card7:focus-within .cardContent {
+        opacity: 1 !important;
+        transform: translateY(75%) !important;
+        transition: none !important;
     }
-    .card6:hover .cardContent, .card6:focus-within .cardContent {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    .card7:hover .cardContent, .card7:focus-within .cardContent{
-        opacity: 1;
-        transform: translateY(0);
-    }
+
     .cardTitle::after {
-        transform: scaleX(0);
+        transform: scaleX(0) !important;
     }
-    
+
     .cardTitle:hover.cardTitle::after {
-        transform: scaleX(1);
+        transform: scaleX(0) !important;
     }
-    
+}
 
-    @media only screen and (max-width: 768px) {
-        .cardBTN:hover, .cardBTN:focus {
-            cursor: default;
-            transition: none;
-            box-shadow: none;
-        }
-    
-        .card1:hover .cardContent, .card1:focus-within .cardContent,
-        .card2:hover .cardContent, .card2:focus-within .cardContent,
-        .card3:hover .cardContent, .card3:focus-within .cardContent,
-        .card4:hover .cardContent, .card4:focus-within .cardContent,
-        .card5:hover .cardContent, .card5:focus-within .cardContent,
-        .card6:hover .cardContent, .card6:focus-within .cardContent,
-        .card7:hover .cardContent, .card7:focus-within .cardContent {
-            opacity: unset;
-            transform: unset;
-        }
-    
-        .cardTitle::after {
-            transform: unset;
-        }
-    
-        .cardTitle:hover.cardTitle::after {
-            transform: unset;
-        }
-    }
-    
 
-    
-    @media only screen and (min-width: 390px) and (max-width: 500px){
-        .projectsCards {
-            width: 60%;
-        }
-    
-        .card1, .card2, .card3, .card4, .card5,  .card6, .card7 {
-            margin: 1rem;
-            margin-left: 20% ;
-            background-repeat: no-repeat;
-            background-size: cover;
-            border-radius: 1rem; 
-            /* padding-top: 11rem; */
-             color: white;
-            height: 15rem;
-            position: sticky;
-            top: 8rem;
-            overflow: hidden;
-        }
-     
+
+@media only screen and (min-width: 390px) and (max-width: 500px) {
+    .projectsCards {
+        width: 60%;
     }
+
+    .card1,
+    .card2,
+    .card3,
+    .card4,
+    .card5,
+    .card6,
+    .card7 {
+        margin: 1rem;
+        margin-left: 20%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 1rem;
+        /* padding-top: 11rem; */
+        color: white;
+        height: 15rem;
+        position: sticky;
+        top: 8rem;
+        overflow: hidden;
+    }
+
+}
 
 
 
@@ -892,7 +1006,7 @@ padding: 0.5rem 0.5rem;
     font-size: 1.5rem;
     z-index: 2;
     font-weight: 500;
-  
+
 }
 
 
@@ -900,22 +1014,22 @@ padding: 0.5rem 0.5rem;
 .aboutMeHeading {
     position: relative;
     width: max-content;
-    margin: 30px 0; 
+    margin: 30px 0;
     z-index: 2;
 }
 
 .aboutMeHeading::before {
-content: "";
-position: absolute;
-bottom: 0;
-left: 0;
-width: 100%;
-height: 3rem;
-background-color: #00C4F0;
-z-index: -1;
-transform: scaleX(0);
-box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0);
-transition: transform 0.5s ease-in-out;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3rem;
+    background-color: #00C4F0;
+    z-index: -1;
+    transform: scaleX(0);
+    box-shadow: 0 0 0px 0px rgba(0, 0, 0, 0);
+    transition: transform 0.5s ease-in-out;
 
 }
 
@@ -937,91 +1051,98 @@ transition: transform 0.5s ease-in-out;
     background-size: cover;
     background-repeat: no-repeat;
     padding: 20px;
-    
+
 }
 
- .parentBox {
+.parentBox {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 150vh;
     background-color: #23242a;
     box-sizing: border-box;
- }
+}
 
- .box {
+.box {
     position: relative;
     width: 380px;
     height: 700px;
     background-color: #1c1c1c;
     overflow: hidden;
- }
+}
 
- .box::before {
+.box::before {
     content: "";
     position: absolute;
     top: -50%;
     left: -50%;
     width: 380px;
     height: 700px;
-    background: linear-gradient(0deg, transparent, transparent, #45f3ff,#45f3ff,#45f3ff);
+    background: linear-gradient(0deg, transparent, transparent, #45f3ff, #45f3ff, #45f3ff);
     transform-origin: bottom right;
     z-index: 1;
     animation: animate 6s linear infinite;
- }
+}
 
- .box::after {
+.box::after {
     content: "";
     position: absolute;
     top: -50%;
     left: -50%;
     width: 380px;
     height: 700px;
-    background: linear-gradient(0deg, transparent, transparent, #45f3ff,#45f3ff,#45f3ff);
+    background: linear-gradient(0deg, transparent, transparent, #45f3ff, #45f3ff, #45f3ff);
     transform-origin: bottom right;
     z-index: 1;
     animation: animate 6s linear infinite;
     animation-delay: -3s;
- }
+}
 
- .borderLine {
+.borderLine {
     position: absolute;
     top: 0;
     inset: 0;
- }
- .borderLine::before {
+}
+
+.borderLine::before {
     content: "";
     position: absolute;
     top: -50%;
     left: -50%;
     width: 380px;
     height: 700px;
-    background: linear-gradient(0deg, transparent, transparent, #230de6,#230de6,#230de6);
+    background: linear-gradient(0deg, transparent, transparent, #230de6, #230de6, #230de6);
     transform-origin: bottom right;
     z-index: 1;
     animation: animate 6s linear infinite;
     animation-delay: -1.5s;
- }
- .borderLine::after {
+}
+
+.borderLine::after {
     content: "";
     position: absolute;
     top: -50%;
     left: -50%;
     width: 380px;
     height: 700px;
-    background: linear-gradient(0deg, transparent, transparent, #230de6,#230de6,#230de6);
+    background: linear-gradient(0deg, transparent, transparent, #230de6, #230de6, #230de6);
     transform-origin: bottom right;
     z-index: 1;
     animation: animate 6s linear infinite;
     animation-delay: -4.5s;
- }
+}
 
- @keyframes animate {
-    0% {transform: rotate(0deg);}
-    100% {transform: rotate(360deg);}
- }
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
 
- .box form {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.box form {
     position: absolute;
     inset: 4px;
     padding: 50px 20px;
@@ -1030,22 +1151,23 @@ transition: transform 0.5s ease-in-out;
     z-index: 2;
     display: flex;
     flex-direction: column;
- }
+}
 
 
- .box form h2 {
+.box form h2 {
     color: white;
     text-align: center;
     font-weight: 500;
     letter-spacing: 0.1em;
- }
+}
 
- .box form .inputBox {
+.box form .inputBox {
     position: relative;
     width: 300px;
     margin-top: 35px;
- }
- .box form .inputBox input {
+}
+
+.box form .inputBox input {
     position: relative;
     width: 100%;
     padding: 20px 10px 10px;
@@ -1058,10 +1180,10 @@ transition: transform 0.5s ease-in-out;
     letter-spacing: 0.05em;
     transition: 0.5s;
     z-index: 10;
- }
+}
 
 
- .box form .inputBox span {
+.box form .inputBox span {
     position: absolute;
     left: 0;
     padding: 20px 0px 10px;
@@ -1071,18 +1193,19 @@ transition: transform 0.5s ease-in-out;
     font-size: 1em;
     letter-spacing: 0.05em;
     transition: 0.5s;
- }
+}
 
- 
- .box form .inputBox input:valid ~ span, 
- .box form .inputBox input:focus ~ span  {
+
+.box form .inputBox input:valid~span,
+.box form .inputBox input:focus~span {
     color: white;
     font-size: 0.75em;
     transform: translateY(-35px);
- }
- .inputBox i {
-     display:block;
-     position: relative;
+}
+
+.inputBox i {
+    display: block;
+    position: relative;
     left: 0;
     top: 0;
     width: 100%;
@@ -1094,15 +1217,15 @@ transition: transform 0.5s ease-in-out;
     transition: 0.5s;
 }
 
-.box form .inputBox input:valid ~ i, 
- .box form .inputBox input:focus ~ i {
+.box form .inputBox input:valid~i,
+.box form .inputBox input:focus~i {
     height: 50px;
     transform: translateY(-35px);
- }
+}
 
 
 
- .box form .textArea {
+.box form .textArea {
     position: relative;
     width: 300px;
     margin-top: 35px;
@@ -1110,9 +1233,9 @@ transition: transform 0.5s ease-in-out;
     display: flex;
     justify-content: center;
     align-items: center;
- }
+}
 
- .box form textarea {
+.box form textarea {
     position: relative;
     width: 100%;
     left: 1rem;
@@ -1127,11 +1250,12 @@ transition: transform 0.5s ease-in-out;
     letter-spacing: 0.05em;
     transition: 0.5s;
     z-index: 10;
- }
- .box form .textArea span {
+}
+
+.box form .textArea span {
     position: absolute;
     left: 0;
-    padding: 300px 10px 10px ;
+    padding: 300px 10px 10px;
     color: #8f8f8f;
     font-weight: 600;
     pointer-events: none;
@@ -1139,28 +1263,28 @@ transition: transform 0.5s ease-in-out;
     letter-spacing: 0.05em;
     transition: 0.5s;
     margin-bottom: 5rem;
- }
-
- 
- .box form .textArea textarea:focus ~ span  {
-    display: none;
- }
-
- .textArea i {
-    display:block;
-    position: absolute;
-   left: 0;
-   bottom: -1em;
-   width: 100%;
-   height: 4px;
-   background-color: white;
-   pointer-events: none;
-   border-radius: 4px;
-   overflow: hidden;
-   transition: 0.5s;
 }
 
-.box form .textArea textarea:focus ~ i {
+
+.box form .textArea textarea:focus~span {
+    display: none;
+}
+
+.textArea i {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -1em;
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    pointer-events: none;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.box form .textArea textarea:focus~i {
     height: 200px;
     transform: translateY(-35px);
 }
@@ -1177,4 +1301,3 @@ transition: transform 0.5s ease-in-out;
     font-weight: 600;
     width: 100px;
 }
-
