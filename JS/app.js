@@ -84,17 +84,7 @@ art.style.zIndex = "12"
 art.style.position = "absolute"
 art.classList.add("art_appearance")
 
-// ellipse.addEventListener("mouseover", ()=> {
-//     ellipse.appendChild(art)
-//     art.classList.toggle("art_appearance")
 
-// })
-
-// ellipse.addEventListener("mouseout",()=> {
-//     art.classList.toggle("art_departure")
-//     ellipse.removeChild(art)
-
-// })
 ellipse.appendChild(art)
 
 
@@ -122,15 +112,3 @@ ellipse.addEventListener("mouseout", ()=> {
     
 })
 
-// portfolioImg animation
-
-// let aboutMeImg = document.body.querySelector(".aboutMeImg")
-// let aboutMeImgArt = document.createElement("img")
-// aboutMeImg.setAttribute("src", "/Asset/Variant2.png")
-// aboutMeImg.style.zIndex = "-1"
-
-// let aboutMeImgs = document.body.querySelector(".aboutMeImgs")
-
-// aboutMeImg.addEventListener("mouseover",()=> {
-//     aboutMeImgs.appendChild(aboutMeImg)
-// })
